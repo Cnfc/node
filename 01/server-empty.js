@@ -9,10 +9,10 @@ server.emit = (...args) => {
 
     return emit.apply(server, args);
 };
-server.on("request", (req, res) => {
-    if(req.url === "/") {
-        res.end("hello, world !");
-    }
-});
+// server.on("request", (req, res) => {
+//     if(req.url === "/") {
+//         res.end("hello, world !");
+//     }
+// });
 
 server.listen(8000);

@@ -1,7 +1,7 @@
 
 const fn = require("./mod");
 
-const {Server} = require("http");
+const { Server } = require("http");
 
 
 const server = new Server(fn);
