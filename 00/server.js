@@ -4,7 +4,7 @@ var url = require("url");
 
 var server = new http.Server(function(req, res) {
 
-  console.log(req.headers);
+    console.log(req.headers);
 
 
 
@@ -18,4 +18,4 @@ var server = new http.Server(function(req, res) {
     }
 });
 
-server.listen(1337, '127.0.0.1');
+server.listen(1337, "127.0.0.1");
