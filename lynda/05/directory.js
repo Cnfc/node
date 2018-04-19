@@ -1,9 +1,7 @@
 var fs = require("fs");
 
 if(fs.existsSync("new")) {
-
     console.log("Directory already there");
-
 } else {
 
     fs.mkdir("new", function(err){
