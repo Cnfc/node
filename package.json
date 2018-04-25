@@ -1,25 +1,29 @@
 {
-  "name": "node-materials",
+  "name": "ski-dictionary",
   "version": "1.0.0",
-  "description": "",
+  "description": "a collection of skier terms",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "NODE_PATH=./handlers:./modules node index.js"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Cnfc",
+  "license": "MIT",
   "dependencies": {
     "aws": "0.0.3-2",
+    "body-parser": "^1.18.2",
     "bunyan": "^1.8.5",
     "clarify": "^2.0.0",
     "co-busboy": "^1.3.1",
     "config": "^1.24.0",
+    "cors": "^2.8.4",
     "es6-promisify": "^4.1.0",
     "expect": "^1.20.2",
+    "express": "^4.16.3",
     "fs-extra": "^0.30.0",
     "gulp": "*",
     "gulp-nodemon": "^2.1.0",
+    "httpster": "^1.0.3",
     "juice": "^3.0.0",
     "jwt-simple": "^0.5.1",
     "koa": "^2.0.0-alpha.7",
@@ -57,11 +61,25 @@
     "socket.io-emitter": "^1.0.0",
     "socket.io-redis": "^1.1.0",
     "trace": "^2.3.3",
+    "underscore": "^1.9.0",
     "yargs": "^5.0.0"
   },
   "devDependencies": {
     "eslint": "^3.3.1",
     "eslint-config-google": "^0.6.0",
     "selenium-webdriver": "^3.0.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cnfc/node.git"
+  },
+  "keywords": [
+    "ski",
+    "terms",
+    "dictionary"
+  ],
+  "bugs": {
+    "url": "https://github.com/Cnfc/node/issues"
+  },
+  "homepage": "https://github.com/Cnfc/node#readme"
 }
