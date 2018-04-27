@@ -15,6 +15,7 @@ ws.onmessage = function(payload) {
 
 document.forms[0].onsubmit = function () {
     var input = document.getElementById("message");
+    ws.send(input.value);
     input.value = "";
 };
 
