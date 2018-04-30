@@ -1,5 +1,5 @@
 
-var EventEmitter = require('events').EventEmitter;
+var EventEmitter = require("events").EventEmitter;
 
 var db = new EventEmitter();
 
