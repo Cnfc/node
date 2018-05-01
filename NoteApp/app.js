@@ -14,7 +14,15 @@ console.log('Command: ', command);
 console.log("Yargs", argv);
 
 if(command === "add") {
-  notes.addNote(argv.title, argv.body);
+  let note = notes.addNote(argv.title, argv.body);
+  if (note ) {
+    console.log("Note Created");
+    console.log('============');
+    console.log(`title: ${note.title}`);
+    console.log(`body: ${note.body}`);
+  } else {
+    console.log('Note title created');
+  }
 } else if(command === 'list') {
   notes.getAll();
 } else if(command === 'read') {
