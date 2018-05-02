@@ -10,10 +10,21 @@ const yargs = require('yargs');
 const notes = require("./notes.js")
 // const debugging = require("./pla")
 
-const argv = yargs.argv;
+const argv = yargs
+  .command('add', 'Add a new note', {
+     title: {
+       describe: "Title of note",
+       demand: true,
+       alias: 't'
+     },
+     body: {
+       
+     }
+  })
+  .help()
+  .argv;
 var command = argv._[0];
-console.log('Command: ', command);
-console.log("Yargs", argv);
+
 
 if(command === "add") {
   let note = notes.addNote(argv.title, argv.body);
